@@ -1,0 +1,493 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scrollbar-width: 0px;
+    
+}
+
+html{
+    font-size: 12pt;
+    font-family: Poppins, 'Segoe UI', Tahoma, sans-serif;
+}
+
+#burgerimage{
+    width: 50vw;
+}
+
+
+nav{
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    top: 0;
+}
+
+#burgerlogoname{
+   font-family: "Playwrite MX", cursive;
+   font-size: 14px;
+   padding-left: 10px;
+}
+
+#logoburger{
+    width: 80px;
+    height: 60px;
+    padding-left: 10px;
+    padding-top: 5px;
+    justify-content: flex-start;
+   
+}
+
+#content1{
+   padding-left: 200px;
+   padding-bottom: 70px;
+   
+}
+
+#container{
+    font-size: 8px;
+    font-family:"Playwrite MX", cursive;
+    
+    background-color:  antiquewhite;
+    width: 150px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1 {
+    
+    overflow: visible;
+    width: 190px;
+    height: 254px;
+  }
+  
+  .content1 {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 300ms;
+    box-shadow: 0px 0px 10px 1px #000000ee;
+    border-radius: 5px;
+  }
+  
+  .front, .back {
+    background-color: #151515;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .back {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .back::before {
+    position: absolute;
+    content: ' ';
+    display: block;
+    width: 160px;
+    height: 160%;
+    background: linear-gradient(90deg, transparent, #ff9966, #ff9966, #ff9966, #ff9966, transparent);
+    animation: rotation_481 5000ms infinite linear;
+  }
+  
+  .back-content {
+    position: absolute;
+    width: 99%;
+    height: 99%;
+    background-color: #151515;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .card1:hover .content1 {
+    transform: rotateY(180deg);
+  }
+  
+  @keyframes rotation_481 {
+    0% {
+      transform: rotateZ(0deg);
+    }
+  
+    0% {
+      transform: rotateZ(360deg);
+    }
+  }
+  
+  .front {
+    transform: rotateY(180deg);
+    color: white;
+  }
+  
+  .front .front-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .front-content .badge {
+    background-color: #00000055;
+    padding: 2px 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    width: fit-content;
+  }
+  
+  .description {
+    box-shadow: 0px 0px 10px 5px #00000088;
+    width: 100%;
+    padding: 10px;
+    background-color: #00000099;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+  }
+  
+  .title {
+    font-size: 11px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .title p {
+    width: 50%;
+  }
+  
+  .card-footer {
+    color: #ffffff88;
+    margin-top: 5px;
+    font-size: 8px;
+  }
+  
+  .front .img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #ffbb66;
+    position: relative;
+    filter: blur(15px);
+    animation: floating 2600ms infinite linear;
+  }
+  
+  #bottom {
+    background-color: #ff8866;
+    left: 50px;
+    top: 0px;
+    width: 150px;
+    height: 150px;
+    animation-delay: -800ms;
+  }
+  
+  #right {
+    background-color: #ff2233;
+    left: 160px;
+    top: -80px;
+    width: 30px;
+    height: 30px;
+    animation-delay: -1800ms;
+  }
+  
+  @keyframes floating {
+    0% {
+      transform: translateY(0px);
+    }
+  
+    50% {
+      transform: translateY(10px);
+    }
+  
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+.foodmenu{
+    display: flex;
+    justify-content: space-around;
+    font-size: 19px;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.itemdescription{
+    font-size: 20px;
+    color:black;
+    width: 80%;
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(9px);
+    backdrop-filter: blur(9px);
+    background-color: antiquewhite;
+    opacity: 0.7;
+}
+
+
+
+
+
+.card {
+    width: 190px;
+    height: 254px;
+    background: rgb(103, 225, 255);
+    transition: all 0.4s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+    font-size: 30px;
+    font-weight: 900;
+  }
+  
+  .card:hover {
+    border-radius: 15px;
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+    background: rgb(103, 151, 255);
+  }
+  
+  .first-content {
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 9px;
+  }
+  
+  .card:hover .first-content {
+    height: 0px;
+    opacity: 0;
+  }
+  
+
+  
+  .second-content {
+    height: 0%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    transition: all 0.4s;
+    font-size: 0px;
+    transform: rotate(90deg) scale(-1);
+  }
+  
+  .card:hover .second-content {
+    opacity: 1;
+    height: 100%;
+    font-size: 1.8rem;
+    transform: rotate(0deg);
+  }
+  
+
+.cardname12{
+    font-size: 14px;
+    color: white;
+    font-family:"Playwrite MX", cursive;
+
+}  
+
+
+#menuname{
+    font-size: 30px;
+    padding-top:80px ;
+    color: black;
+    font-family:"Playwrite MX", cursive;
+    padding-bottom: 30px;
+
+}
+#secondcontent{
+    background:url(images/burger121.png) no-repeat center center/cover ;
+    background-size: 50%  70%;
+    
+    text-align: center;
+    height:2000px;
+    padding: 20px;
+}
+
+#secondcontent h1{
+    color: black;
+    font-family:"Playwrite MX", cursive;
+}
+
+.latestmenu{
+padding-top: 100px;    
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+gap: 80px;
+}
+#container1{
+    width: 350px;
+    font-size: 26px;
+    font-family: "Playwrite NG Modern", cursive;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+}
+
+.links-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    background-color: black;
+    color: aliceblue;
+    transition: 0.5s ease-in;
+}
+
+
+#sidebar-active{
+    display: none;
+}
+
+#firstcontent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.open-sidebar-button, .close-sidebar-button{
+    padding: 0 20px;
+    display: none;
+}
+
+@media(max-width: 500px){
+    .links-container{
+        
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        background-color: aliceblue;
+        width: 300px;
+        box-shadow: -5px 0 5px rgba(0,0,0,0.25);
+        transition: 1s ease-out;
+    }
+
+    #burgerlogoname{
+        display: none;
+    }
+
+   #secondcontent{
+    background-image: none;
+   }
+
+    nav a{
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+    }
+
+    .open-sidebar-button, .close-sidebar-button{
+        padding: 20px;
+        display: block;
+    }
+
+    #sidebar-active:checked ~ .links-container{
+        right:0;
+    }
+
+    #sidebar-active:checked ~ #overlay{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+}
+
+
+.cardname12{
+  color: #151515;
+}
+@media(max-width:1000px){
+    #firstcontent{
+        display: flex;
+        flex-direction: column;
+        
+      
+    }
+
+    #secondcontent{
+        background-image: none;
+       }
+
+    #content1{
+        padding-top: 20px;
+        padding-left: 0px;
+         width: 100%;
+         padding-bottom: 5px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+
+    }
+
+    
+    #burgerimage{
+        width: 100vw;
+    }
+
+}
+
+#chefabout h1{
+  padding: 80px;
+  font-size: 15px;
+}

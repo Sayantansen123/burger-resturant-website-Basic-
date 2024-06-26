@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="navigation">
+    <div style="display: flex;align-items: center;">
+      <img id="logoburger" src="images/logo.png" alt="">
+      <h1 id="burgerlogoname">Burger Hub</h1>
+    </div>
+    <nav>
+      <input type="checkbox" id="sidebar-active">
+      <label for="sidebar-active" class="open-sidebar-button">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="##000000">
+          <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+        </svg>
+      </label>
+      <label id="overlay" for="sidebar-active"></label>
+      <div class="links-container">
+        <label for="sidebar-active" class="close-sidebar-button">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="##000000">
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+          </svg>
+        </label>
+
+        <a href="#firstcontent">Home</a>
+        <a href="#aboutus">About</a>
+        <a href="#secondcontent">Menu</a>
+        <a href="#chefs1">Chefs</a>
+      </div>
+    </nav>
+  </div>
+
+  <section id="firstcontent">
+    <div id="content1">
+      <div id="container">
+        <h1>Savour it all...</h1>
+      </div>
+
+      <div id="container1">
+        <h1>Dive into the Flavourful
+          life of the tastiest and
+          juciest burger
+        </h1>
+      </div>
+    </div>
+    <div>
+      <img id="burgerimage" src="images/burger.png" alt="">
+    </div>
+  </section>
+
+  <section id="secondcontent">
+    <h1 id="todaysmenu">Today's Hot Choices</h1>
+
+    <div class="latestmenu">
+      <div class="card">
+        <div class="first-content"
+          style="background:url(https://imgs.search.brave.com/ZdQLV_KfHtiENKuYdppGFR33Wo7O6RHjOypDpueoiyM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTQ1/MjUyODkyOS9waG90/by9idXJnZXItc2Fu/ZHdpY2gud2VicD9i/PTEmcz0xNzA2Njdh/Jnc9MCZrPTIwJmM9/VFAzckstZTRuY0to/dGQ3WWxtOWpWcHg3/YVpyd3J0MEl0Z0RN/OTN2dmZnYz0) no-repeat center center/cover;">
+
+        </div>
+        <div class="second-content">
+          <span>17$</span>
+        </div>
+
+        <span class="cardname12">Chilly Burger</span>
+      </div>
+
+
+      <div class="card">
+        <div class="first-content"
+          style="background:url(https://imgs.search.brave.com/0cdbinp-8X5XW1UE9l7Qbi5HJg3agRuIy1TX4b_pfa4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9m/cm9udC12aWV3LWJ1/cmdlci1zdGFuZF8x/NDE3OTMtMTU1NDIu/anBnP3NpemU9NjI2/JmV4dD1qcGc) no-repeat center center/cover;">
+
+        </div>
+        <div class="second-content">
+          <span>19.5$</span>
+        </div>
+        <span class="cardname12">Chilla's Burger</span>
+      </div>
+
+      <div class="card">
+        <div class="first-content"
+          style="background:url(https://imgs.search.brave.com/STVHV8hsNVmJsBBQ71M0umdpnc7NXO2H4TpyGf_90aI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/NzI4MDI0MTkyMjQt/Mjk2YjBhZWVlMGQ5/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4T0h4OFlt/VmxaaVV5TUdKMWNt/ZGxjbnhsYm53d2ZI/d3dmSHg4TUE9PQ.jpeg) no-repeat center center/cover;">
+
+        </div>
+        <div class="second-content">
+          <span>18$</span>
+        </div>
+        <span class="cardname12">hope's Burger</span>
+      </div>
+
+
+      <div class="card">
+        <div class="first-content"
+          style="background:url(https://imgs.search.brave.com/2zvxSeroOcEq2dly2txRA7x3e2YUv1HmnLuaqHG9qmg/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTQ4/Njg3ODE4NC9waG90/by9jbGFzc2ljLWNo/ZWVzZS1idXJnZXIu/d2VicD9iPTEmcz0x/NzA2NjdhJnc9MCZr/PTIwJmM9SjMzTTJJ/UHd6SlByTmpVbDBR/aDVWT05uM1N1dmpZ/ZURIQ0dKNU5FZ045/MD0) no-repeat center center/cover;">
+
+        </div>
+        <div class="second-content">
+          <span>19$</span>
+        </div>
+        <span class="cardname12">large Burger</span>
+      </div>
+
+    </div>
+
+    <h2 id="menuname">Today's Menu</h2>
+
+    <div class="foodmenu">
+      <div class="card1">
+        <div class="content1">
+          <div class="back">
+            <div class="back-content"
+              style="background:url(https://imgs.search.brave.com/l6VnU7EKW4zi1HOT_YT4YkXalP2CIWm5tu7qjEp1uqU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuZnJlZWltYWdl/cy5jb20vaW1hZ2Vz/L2xhcmdlLXByZXZp/ZXdzL2JmMC9idXJn/ZXItMS0xMzI0NjQ0/LmpwZz9mbXQ) no-repeat center center/cover;">
+
+            </div>
+          </div>
+          <div class="front">
+
+            <div class="img">
+              <div class="circle">
+              </div>
+              <div class="circle" id="right">
+              </div>
+              <div class="circle" id="bottom">
+              </div>
+            </div>
+
+            <div class="front-content">
+              <small class="badge">Small Burger</small>
+              <span>19.09$</span>
+              <div class="description">
+
+
+                <div class="title">
+                  <p class="title">
+                    <strong>Burger no grante</strong>
+                  </p>
+                  <svg fill-rule="nonzero" height="15px" width="15px" viewBox="0,0,256,256"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                    <g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none"
+                      font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10"
+                      stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none" fill-rule="nonzero"
+                      fill="#20c997">
+                      <g transform="scale(8,8)">
+                        <path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <p class="card-footer">
+                  30 Mins &nbsp; | &nbsp; 1 Serving
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="itemdescription">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dolor porro ab cumque, vero, molestiae hic impedit
+        voluptate fugiat, quae id eveniet! Enim, ea. Vitae at saepe pariatur necessitatibus ad.
+      </div>
+    </div>
+    <hr>
+    <div class="foodmenu">
+
+      <div class="itemdescription">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dolor porro ab cumque, vero, molestiae hic impedit
+        voluptate fugiat, quae id eveniet! Enim, ea. Vitae at saepe pariatur necessitatibus ad.
+      </div>
+      <div class="card1">
+        <div class="content1">
+          <div class="back">
+            <div class="back-content"
+              style="background:url(https://imgs.search.brave.com/2zvxSeroOcEq2dly2txRA7x3e2YUv1HmnLuaqHG9qmg/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTQ4/Njg3ODE4NC9waG90/by9jbGFzc2ljLWNo/ZWVzZS1idXJnZXIu/d2VicD9iPTEmcz0x/NzA2NjdhJnc9MCZr/PTIwJmM9SjMzTTJJ/UHd6SlByTmpVbDBR/aDVWT05uM1N1dmpZ/ZURIQ0dKNU5FZ045/MD0) no-repeat center center/cover;">
+
+            </div>
+          </div>
+          <div class="front">
+
+            <div class="img">
+              <div class="circle">
+              </div>
+              <div class="circle" id="right">
+              </div>
+              <div class="circle" id="bottom">
+              </div>
+            </div>
+
+            <div class="front-content">
+              <small class="badge">Small Burger</small>
+              <span>19.09$</span>
+              <div class="description">
+
+
+                <div class="title">
+                  <p class="title">
+                    <strong>Burger no grante</strong>
+                  </p>
+                  <svg fill-rule="nonzero" height="15px" width="15px" viewBox="0,0,256,256"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                    <g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none"
+                      font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10"
+                      stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none" fill-rule="nonzero"
+                      fill="#20c997">
+                      <g transform="scale(8,8)">
+                        <path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <p class="card-footer">
+                  30 Mins &nbsp; | &nbsp; 1 Serving
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <hr>
+    <div class="foodmenu">
+      <div class="card1">
+        <div class="content1">
+          <div class="back">
+            <div class="back-content"
+              style="background:url(https://imgs.search.brave.com/2zvxSeroOcEq2dly2txRA7x3e2YUv1HmnLuaqHG9qmg/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTQ4/Njg3ODE4NC9waG90/by9jbGFzc2ljLWNo/ZWVzZS1idXJnZXIu/d2VicD9iPTEmcz0x/NzA2NjdhJnc9MCZr/PTIwJmM9SjMzTTJJ/UHd6SlByTmpVbDBR/aDVWT05uM1N1dmpZ/ZURIQ0dKNU5FZ045/MD0) no-repeat center center/cover;">
+
+            </div>
+          </div>
+          <div class="front">
+
+            <div class="img">
+              <div class="circle">
+              </div>
+              <div class="circle" id="right">
+              </div>
+              <div class="circle" id="bottom">
+              </div>
+            </div>
+
+            <div class="front-content">
+              <small class="badge">Small Burger</small>
+              <span>19.09$</span>
+              <div class="description">
+
+
+                <div class="title">
+                  <p class="title">
+                    <strong>Burger no grante</strong>
+                  </p>
+                  <svg fill-rule="nonzero" height="15px" width="15px" viewBox="0,0,256,256"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                    <g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none"
+                      font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10"
+                      stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none" fill-rule="nonzero"
+                      fill="#20c997">
+                      <g transform="scale(8,8)">
+                        <path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <p class="card-footer">
+                  30 Mins &nbsp; | &nbsp; 1 Serving
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="itemdescription">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dolor porro ab cumque, vero, molestiae hic impedit
+        voluptate fugiat, quae id eveniet! Enim, ea. Vitae at saepe pariatur necessitatibus ad.
+      </div>
+    </div>
+    <hr>
+    <div class="foodmenu">
+
+      <div class="itemdescription">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dolor porro ab cumque, vero, molestiae hic impedit
+        voluptate fugiat, quae id eveniet! Enim, ea. Vitae at saepe pariatur necessitatibus ad.
+      </div>
+      <div class="card1">
+        <div class="content1">
+          <div class="back">
+            <div class="back-content"
+              style="background:url(https://imgs.search.brave.com/2zvxSeroOcEq2dly2txRA7x3e2YUv1HmnLuaqHG9qmg/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTQ4/Njg3ODE4NC9waG90/by9jbGFzc2ljLWNo/ZWVzZS1idXJnZXIu/d2VicD9iPTEmcz0x/NzA2NjdhJnc9MCZr/PTIwJmM9SjMzTTJJ/UHd6SlByTmpVbDBR/aDVWT05uM1N1dmpZ/ZURIQ0dKNU5FZ045/MD0) no-repeat center center/cover;">
+
+            </div>
+          </div>
+          <div class="front">
+
+            <div class="img">
+              <div class="circle">
+              </div>
+              <div class="circle" id="right">
+              </div>
+              <div class="circle" id="bottom">
+              </div>
+            </div>
+
+            <div class="front-content">
+              <small class="badge">Small Burger</small>
+              <span>19.09$</span>
+              <div class="description">
+
+
+                <div class="title">
+                  <p class="title">
+                    <strong>Burger no grante</strong>
+                  </p>
+                  <svg fill-rule="nonzero" height="15px" width="15px" viewBox="0,0,256,256"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                    <g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none"
+                      font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10"
+                      stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none" fill-rule="nonzero"
+                      fill="#20c997">
+                      <g transform="scale(8,8)">
+                        <path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <p class="card-footer">
+                  30 Mins &nbsp; | &nbsp; 1 Serving
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <hr>
+
+    <div style="height: 30px;"></div>
+    <h1>Our Chefs</h1>
+
+    <div class="latestmenu" id="chefs1">
+      <div class="card">
+        <div class="first-content"
+          style="background:url(https://imgs.search.brave.com/2OiLHbvtkT9UgUla9GSGJLDH01pQwPGWCgLKtJyc9ik/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9jaGVmLWdhcm5p/c2hpbmctZGlzaC1w/cm9mZXNzaW9uYWwt/a2l0Y2hlbl81MzQx/OS0xMjgzNC5qcGc_/c2l6ZT02MjYmZXh0/PWpwZw) no-repeat center center/cover;">
+
+        </div>
+        <div class="second-content">
+          <span>Head
+            Chef
+          </span>
+        </div>
+
+        <span class="cardname12">Sayantan sen</span>
+      </div>
+
+
+      <div class="card">
+        <div class="first-content"
+          style="background:url(https://imgs.search.brave.com/hy2n2COxnXE4tpCQyVm60-pUx10c08yV2IzYotcxEkM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9m/ZW1hbGUtY2hlZi1j/YXJlZnVsbHktcG91/cmluZy1zYXVjZS1k/aXNoXzIzLTIxNDg3/NjMxNjcuanBnP3Np/emU9NjI2JmV4dD1q/cGc) no-repeat center center/cover;">
+
+        </div>
+        <div class="second-content">
+          <span>Assistant
+            chef</span>
+        </div>
+        <span class="cardname12">Sara Das</span>
+      </div>
+
+      <div class="card">
+        <div class="first-content"
+          style="background:url(https://imgs.search.brave.com/1f9zHVC2k79rDlk8hRbiTC5nlyIqjOohc_7qXuT7alE/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTM0/MTkxMjA5NC9waG90/by9wb3J0cmFpdC1v/Zi1hLXN1Y2Nlc3Nm/dWwtY2hlZi1hdC1h/LXJlc3RhdXJhbnQt/YW5kLXNtaWxpbmcu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PXFKbEoxc3k2SHpw/cDlONTBVN1JfUzdh/eUpfc2QydUMzRGgx/UWJBQUJxOEE9) no-repeat center center/cover;">
+
+        </div>
+        <div class="second-content">
+          <span>Assistant
+            Chef
+          </span>
+        </div>
+        <span class="cardname12">Haradhon Roy</span>
+      </div>
+
+    </div>
+    <div id="chefabout">
+      <h1>Renowned chefs from around the world are celebrated for their unique skills and contributions to the culinary
+        arts. sayantan sen, a master of haute cuisine, British, French, and Italian dishes, is known for his
+        Michelin-starred restaurants and television shows, with signature dishes like Beef Wellington and Lobster
+        Ravioli. sara roy revolutionized American cooking by popularizing French cuisine through her seminal cookbook
+        "Mastering the Art of French Cooking" and her iconic TV show "The French Chef. Nobu Matsuhisa blends traditional
+        Japanese techniques with Peruvian ingredients, creating a unique fusion that has garnered worldwide acclaim.
+        Alice Waters, a pioneer of the farm-to-table movement, emphasizes fresh, local. </h1>
+      <hr>
+
+    </div>
+
+    <h1 id="aboutus" style="padding-bottom: 30px;padding-top: 30px;">About Us</h1>
+    <div style="padding: 20px;"><img style="width: 80%; max-width: 500px;" src="images/delicious-meal.webp" alt=""></div>
+    <h1 style="font-size: 20px;">
+      Welcome to Burger Hub, where burgers are more than a meal—they're a culinary journey. Our passion for quality
+      shines through in every bite of our handcrafted Angus beef patties and freshly baked brioche buns. Whether you
+      crave a classic cheeseburger or a gourmet creation with unique toppings, our menu offers something to delight
+      every palate. Complemented by hand-cut fries, crisp salads, and indulgent milkshakes, our commitment to excellence
+      ensures a memorable dining experience. Visit us in koklkata and discover why Burger hub is celebrated for
+      its delicious food, inviting atmosphere, and exceptional service. </h1>
+
+
+  </section>
+
+
+
+
+
+</body>
+
+</html>
